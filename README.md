@@ -1,7 +1,7 @@
 # 🍎 식품 및 생활용품 이커머스 플랫폼 Market Place
  
 
-<img src="https://github.com/BoubleJ/ASAC_Market_Place_Epik/assets/122145341/d3600fc0-15c6-4e01-b3be-f0e702eb4c74" width="40%" height="500px" alt="RubberDuck"></img>
+<img src="https://private-user-images.githubusercontent.com/122145341/316298965-d3600fc0-15c6-4e01-b3be-f0e702eb4c74.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTg4MDkwODcsIm5iZiI6MTcxODgwODc4NywicGF0aCI6Ii8xMjIxNDUzNDEvMzE2Mjk4OTY1LWQzNjAwZmMwLTE1YzYtNGUwMS1iM2JlLWYwZTcwMmViNGM3NC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNjE5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDYxOVQxNDUzMDdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03MDQyZTE2ZmNiNWE5YTRkMGY4N2ZkZDEzMDhkYjg1MWU4YzQ0MGI2Mjk0ZjhjMTcxMTJkNTQxMTYxYzNiODYwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.OPJoFFwIvd0hJsQD6dNTCoUyYhUTwzI0Z1r-XcuJado" width="40%" height="500px" alt="RubberDuck"></img>
 
 [서비스 링크](https://marketplace-asac-3rd.vercel.app/recommendations)
 
