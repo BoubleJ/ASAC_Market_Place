@@ -1,7 +1,8 @@
 # 🍎 식품 및 생활용품 이커머스 플랫폼 Market Place
- 
 
-<img src="https://private-user-images.githubusercontent.com/122145341/316298965-d3600fc0-15c6-4e01-b3be-f0e702eb4c74.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTg4MDkwODcsIm5iZiI6MTcxODgwODc4NywicGF0aCI6Ii8xMjIxNDUzNDEvMzE2Mjk4OTY1LWQzNjAwZmMwLTE1YzYtNGUwMS1iM2JlLWYwZTcwMmViNGM3NC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNjE5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDYxOVQxNDUzMDdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03MDQyZTE2ZmNiNWE5YTRkMGY4N2ZkZDEzMDhkYjg1MWU4YzQ0MGI2Mjk0ZjhjMTcxMTJkNTQxMTYxYzNiODYwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.OPJoFFwIvd0hJsQD6dNTCoUyYhUTwzI0Z1r-XcuJado" width="40%" height="500px" alt="RubberDuck"></img>
+
+
+<img src="https://github.com/BoubleJ/ASAC_Market_Place/assets/122145341/b2eb9a00-a9a4-4445-b08c-1be4175ec5c0" width="40%" height="500px" alt="RubberDuck"></img>
 
 [서비스 링크](https://marketplace-asac-3rd.vercel.app/recommendations)
 
@@ -32,15 +33,7 @@
 <br>
 <br>
 
-### 역할 분담
-
-**이윤지(프론트엔드)**
-- **레이아웃 및 디자인 시스템 적용** : App Routing 의 레이아웃 개발 및 Typography 및 Color 테마 적용
-- 각 페이지의 공통 **헤더 및 푸터 + 네비게이션 바 컴포넌트 개발** : App Routing URL 별 정의
-- 카테고리 결과, 검색 결과, 홈 페이지에서 사용될 **상품 리스트 컴포넌트** 구현 : **필터링 및 동적 렌더링 설계**
-- 상품 리스트를 선택된 옵션에 따라 필터링하는 **필터 컴포넌트** 구현
-- **마이페이지**, **상품상세 페이지**, **리뷰 페이지** 및 **위시리스트**, **장바구니 추가를 위한 하단 버튼 탭 구현**
-- 팀원과 함께 **Vercel** + Github Repository 연동을 통한 프론트엔드 **배포**
+### 전 이런 기능구현을 담당했어요
 
 <br>
 
@@ -52,45 +45,6 @@
 - 주문 페이지 배송 주소 입력을 위해서 **daum post api** 사용
 - **Portone API**을 활용한 **카카오페이 결제 기능 구현**
 - 팀원과 함께 **Vercel** + Github Repository 연동을 통한 프론트엔드 **배포**
-
-<br>
-
-**현승재(프론트엔드)**
-- **기술 스택 및 라이브러리** 선정 : 러닝커브 혹은 재사용성을 고려하여 라이브러리 선정 및 초기 설정
-- 카카오 **소셜 로그인 구현**
-- **OAuth2 의 JWT 토큰 기반 로그인 구현을 위한 HTTP Cookie 활용**
-- **Middleware** 기반 HTTP Cookie 의 JWT 토큰 기반으로 **페이지 접근 제한** : Protected Routes
-- **Portone API**을 활용한 카카오페이 결제 기능 구현
-- **장바구니, 주문서, 주문완료, 주문내역, 주문상세 페이지 구현** : **Zustand 를 통한 비지니스 로직 격리**
-
- <br>
-
- **신준영(백엔드)**
-- **비즈니스 로직 추가 설계** : 와이어프레임 및 화면설계서에 누락된 비즈니스 로직들을 같이 상의하고 설계
-- **ERD 및 엔티티 설계** : JPA를 이용하여 데이터베이스와의 효율적인 상호작용을 위한 엔티티 설계 및 구현
-- **JPA, QueryDSL 활용하여 API 개발 및 관리** : 서비스에 필요한 다양한 API 개발 및 지속적인 관리
-    - **일반 회원가입 API** : 스프링 시큐리티와 JWT를 활용하여 사용자의 가입 프로세스를 처리
-    - **신상품 API** : 메인 페이지 내 최신 상품을 표시하기 위해 복잡 쿼리는 QueryDSL 활용 구현
-    - **필터 API** : 사용자가 원하는 상품을 찾을 수 있도록 QueryDSL 기반의 필터 기능 제공
-    - **주말특가 및 마감세일 API** : 특정 시즌이나 이벤트에 맞춰 할인 상품 정보를 제공
-    - **회원 관리 API 예외 처리 및 리팩토링** : 회원 관련 기능의 안정성 향상을 위한 예외 처리 및 리팩토링
-    - **검색 API** : 사용자가 원하는 상품을 쉽게 찾을 수 있는 검색 기능 API 개발
-    - **검색 키워드 자동 완성 API** : PostgreSQL 의 TRGM 으로 사용자 검색 편의성을 높이는 자동 완성
-    - **결제하기 API** : 결제 및 주문을 각각 다른 사람이 맡아 개발하며 트랜잭션 관리 방법에 대한 협업
-    - **회원 로그아웃 API** : 사용자 로그아웃 기능 구현
-- **JWT 구현 및 관리** : 사용자 인증 및 보안을 강화하기 위해 Spring Security 통한 JWT 구현 및 관리
-- **배포 아키텍처** : AWS VPC 네트워크 구성에서 NAT, 터널링 및 CI/CD 를 위한 CodePipeline 구축
-    - **NAT 인스턴스 활용** : 프라이빗 서브넷에서 인터넷 액세스를 위해 NAT 인스턴스 사용 (요금 절감)
-    - **로드 밸런서 구성** : 2개 프라이빗 서브넷을 통한 인스턴스 이중화와 로드 밸런서 연결로 트래픽 분산
-    - **RDS 연결** : 프라이빗 서브넷 내 RDS 인스턴스 구축 및 데이터베이스 관리
-    - **CI/CD 파이프라인** : AWS CodePipeline 전 스테이지 정의 = **소스 - 빌드 - 배포**
-        1. **소스 스테이지** : AWS CodeCommit 을 통한 버전 관리
-        2. **빌드 스테이지** : AWS CodeBuild 를 통한 도커 이미지 빌드 후 AWS ECR 내 업로드
-        3. **배포 스테이지** : ElasticBeanstalk 내 인스턴스 및 ELB 정의 후 애플리케이션 배포
-     
- ---
-
-
 
 
 
@@ -153,32 +107,13 @@
 <br>
 
 
-### Stacks(백엔드)
-`Spring Boot - WAS 프레임워크`
-- **Spring Security - OAuth2, JWT** : 상태 유지 인증, 필요한 정보 자체적으로 포함
-- **Spring Data JPA + QueryDSL + Hibernate** : 복잡한 데이터베이스 쿼리 간소화, 코드 재사용, 객체와 관계형 데이터베이스 간의 매핑
-- **Lombok** : 반복되는 getter, setter, toString과 같은 메소드를 어노테이션을 통해 자동으로 생성함으로써 코드의 간소화
-  
-`PostgresQL - RDBMS 관계형 데이터베이스`
-
-`AWS`
-- 배포 아키텍처 : AWS VPC 네트워크 구성에서 NAT, 터널링 및 CI/CD 를 위한 CodePipeline 구축
-    - **NAT 인스턴스 활용** : 프라이빗 서브넷에서 인터넷 액세스를 위해 NAT 인스턴스 사용 (요금 절감)
-    - **로드 밸런서 구성** : 2개 프라이빗 서브넷을 통한 인스턴스 이중화와 로드 밸런서 연결로 트래픽 분산
-    - **RDS 연결** : 프라이빗 서브넷 내 RDS 인스턴스 구축 및 데이터베이스 관리
-    - **CI/CD 파이프라인** : AWS CodePipeline 전 스테이지 정의 = **소스 - 빌드 - 배포**
-        1. **소스 스테이지** : AWS CodeCommit 을 통한 버전 관리
-        2. **빌드 스테이지** : AWS CodeBuild 를 통한 도커 이미지 빌드 후 AWS ECR 내 업로드
-        3. **배포 스테이지** : ElasticBeanstalk 내 인스턴스 및 ELB 정의 후 애플리케이션 배포*/
-     
-
-<br>
 
 ### 서비스 아키텍쳐
-![image](https://private-user-images.githubusercontent.com/122145341/316303659-7c6736f8-de6b-4237-a23f-277510163dd2.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTg4MDkwODcsIm5iZiI6MTcxODgwODc4NywicGF0aCI6Ii8xMjIxNDUzNDEvMzE2MzAzNjU5LTdjNjczNmY4LWRlNmItNDIzNy1hMjNmLTI3NzUxMDE2M2RkMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNjE5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDYxOVQxNDUzMDdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT05ZjY2NzRlM2VjMzA1MWRlOGVmM2E0MDg2NDM1NWY3MTU0ZjZhOTcxZDIwYjllN2JjYzY5OWIwMDBiZWFlY2E0JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.TBfEk7VLzX8BOAFIerq4rbUAVOOjSZLGSHJEphFDgYM)
+![image](https://github.com/BoubleJ/ASAC_Market_Place/assets/122145341/8e302dde-9b04-4a2c-8d00-d433d34a8257)
 
 <br>
 <br>
+
 
 ### 와이어프레임 및 화면설계서
 
@@ -199,19 +134,22 @@
 
 <br>
 
-![image](https://private-user-images.githubusercontent.com/122145341/316546276-18baabe8-a0b2-40da-8b7c-b0f1b43f13d8.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTg4MDkwODcsIm5iZiI6MTcxODgwODc4NywicGF0aCI6Ii8xMjIxNDUzNDEvMzE2NTQ2Mjc2LTE4YmFhYmU4LWEwYjItNDBkYS04YjdjLWIwZjFiNDNmMTNkOC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNjE5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDYxOVQxNDUzMDdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kMWFmOTA5ZmJlYTM0ODExNWNkZDllZDM0NmJkMTgxMTk3NzM2MDk5NzM2YjVkMmM1ZTZkYWY4NjY1NTUxNzk2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.maGsb2sfINNRJEcUqmw8teZ9ygCiQ86pLyG73dgA5CU)
+![디자인시스템](https://github.com/BoubleJ/ASAC_Market_Place/assets/122145341/f32e9653-866b-4ff7-a636-807f75e386ef)
+
 
 <br>
 <br>
 
 **화면설계서 : Userflow 정의**
 <br>
-![image](https://private-user-images.githubusercontent.com/122145341/316546345-60079642-6e34-4ed3-a41b-b4a06d3966f5.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTg4MDkwODcsIm5iZiI6MTcxODgwODc4NywicGF0aCI6Ii8xMjIxNDUzNDEvMzE2NTQ2MzQ1LTYwMDc5NjQyLTZlMzQtNGVkMy1hNDFiLWI0YTA2ZDM5NjZmNS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNjE5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDYxOVQxNDUzMDdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00ODU5MDdlYmU1NDE5ZGE4OWI1OGEzYTU2ZGRlMjgzNjJmNzE1OTUxODYxY2ZjNzU3NTFkYjMxMzE1OWFmMDg2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.Bfw0oihQoWu8BBfx9zbB5Sb3uu1LnDGywHk95wtjc7A)
+
+![화면설계서](https://github.com/BoubleJ/ASAC_Market_Place/assets/122145341/ea0e9761-905a-4f18-a92c-347f8fc93695)
 
 
 <br>
 
-![image](https://private-user-images.githubusercontent.com/122145341/316608715-2aa89cbf-9c21-45fb-8e58-cc17308c70f6.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTg4MDkwODcsIm5iZiI6MTcxODgwODc4NywicGF0aCI6Ii8xMjIxNDUzNDEvMzE2NjA4NzE1LTJhYTg5Y2JmLTljMjEtNDVmYi04ZTU4LWNjMTczMDhjNzBmNi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNjE5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDYxOVQxNDUzMDdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT04ODRlOTA5NDY5ZDQ3ZTRkZDBjNjJlOWM4Y2I1ZmVlZGNlMzM5YmI3MjY0NDk0YzdkMDVlNjE4MWU0Mzg4OTVlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.vvuR18ShxKVPethCLnivW-a9PlffzGwAx_BsuOT9laI)
+
+![유저플로우정의](https://github.com/BoubleJ/ASAC_Market_Place/assets/122145341/33024603-0ef4-4634-9948-0ab0c060f47b)
 
 
 
@@ -252,7 +190,8 @@
 
 <div markdown="1">
 
-![image](https://private-user-images.githubusercontent.com/122145341/316546982-5dd08587-7c19-4e87-9d6d-c3f53afe2c2f.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTg4MDkwODcsIm5iZiI6MTcxODgwODc4NywicGF0aCI6Ii8xMjIxNDUzNDEvMzE2NTQ2OTgyLTVkZDA4NTg3LTdjMTktNGU4Ny05ZDZkLWMzZjUzYWZlMmMyZi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNjE5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDYxOVQxNDUzMDdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0wMzljMmU0NGM0MzBmNTU0ZTY3ZjFmNzNmZjRiYzE2MGQzYjFjZGNlMDE1MDk0MWYxYjllZmZmMmNjMmNmNmI3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.UVjebNlCD1-90gW6nynCROb2p9qVXF1Z21DtJWOlV7c)
+![erd다이어그램](https://github.com/BoubleJ/ASAC_Market_Place/assets/122145341/8c40d329-1639-4868-b574-c3d113c41661)
+
 
 </div>
 
@@ -274,7 +213,8 @@
 - 회원가입 시 많은 입력 폼에 React Hook Form 비제어 컴포넌트로 리렌더 감소, Zod 통한 런타임 타입 검증
 - 로그인이 필요한 페이지 및 API 사용 시 Middleware 를 통해 쿠키 내 로그인 토큰 존재여부로 접근 제한
 
-![회원가입 및 로그인 구현 gif](https://private-user-images.githubusercontent.com/122145341/316325586-ce7a8022-7fd3-43ac-865d-c5e5ed3b7d6d.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTg4MDkwODcsIm5iZiI6MTcxODgwODc4NywicGF0aCI6Ii8xMjIxNDUzNDEvMzE2MzI1NTg2LWNlN2E4MDIyLTdmZDMtNDNhYy04NjVkLWM1ZTVlZDNiN2Q2ZC5naWY_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNjE5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDYxOVQxNDUzMDdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0xMGQ3M2RkM2M5NzMzZjU3YTg3MzAzNDQwMDViNzc4YmE5MTZkNzM4MGQxNjU1YWYzMzA3Y2M3YzA4MDJkMjNhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.WETHStE01DDjF955nqE3h_ZpN8xru0Wl33zc3akPSPU)
+![일반로그인](https://github.com/BoubleJ/ASAC_Market_Place/assets/122145341/9d0c4a7b-5627-4662-a128-b76e707e5cb9)
+
 
 
 <br>
@@ -285,7 +225,8 @@
 - OAuth2 인증 및 추가 정보만으로, 일반 이메일 계정을 카카오 계정과 바로 연동 가능
 - **OAuth Cookie 설정** : 일반 로그인 시 백엔드가 프론트엔드한테 JWT를 QueryString 으로 넘긴 다음에 프론트엔드 미들웨어에서 QueryString으로 전달된 JWT를 추출하고 브라우저 Cookie 에 저장하여 “인증이 필요한 API” 호출 시 해당 JWT값 제공.
 
-![카카오 로그인 gif](https://private-user-images.githubusercontent.com/122145341/316325589-ce647a09-e28c-4a19-86b9-99bedd8e1624.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTg4MDkwODcsIm5iZiI6MTcxODgwODc4NywicGF0aCI6Ii8xMjIxNDUzNDEvMzE2MzI1NTg5LWNlNjQ3YTA5LWUyOGMtNGExOS04NmI5LTk5YmVkZDhlMTYyNC5naWY_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNjE5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDYxOVQxNDUzMDdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00YmYwZjM1NDMxZTRjOWNmNTExM2JhYzZmZmEzMGY1Yzc0MGZmMTA2YzYwN2RiMGU5NTFhMzY5NjQwN2U5Mzc4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.VP_fzkUraL3JjTg12HJgoLN8Abr8xvjflkQ-q5iHoUc)
+![sns로그인](https://github.com/BoubleJ/ASAC_Market_Place/assets/122145341/726a74cb-5a29-4092-b1ed-907ee485633e)
+
 
 
 
@@ -296,7 +237,10 @@
 - *Next.js - App Routing (Layout / Page) 활용*
 - 이벤트 배너 및 가로 스크롤을 통해 **다양한 상품 큐레이션**
 - **Intersection Observer** 를 통한 **Viewport 위치를 추적**하여 상품 리스트 검색 결과를 **무한 스크롤**로 구현
-![Marketplace-feature2online-video-cutter com-ezgif com-video-to-gif-converter](https://private-user-images.githubusercontent.com/122145341/317352529-44920fd0-8255-4da5-8f16-f0c637eae60b.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTg4MDkwODcsIm5iZiI6MTcxODgwODc4NywicGF0aCI6Ii8xMjIxNDUzNDEvMzE3MzUyNTI5LTQ0OTIwZmQwLTgyNTUtNGRhNS04ZjE2LWYwYzYzN2VhZTYwYi5naWY_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNjE5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDYxOVQxNDUzMDdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lNzk4MzY4ODljYzBlYTMzNTFjY2YwZDJhOGJkYzk1M2NiM2U1MWEwYzQzM2Q1M2UwZjdiODFjZWQ3YjMxNjM1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.EBFD48-4Xq5hV9gFRoop01hFwzQdv2gs3RdHokNiOM4)
+
+
+
+![홈탭원하는상품조회](https://github.com/BoubleJ/ASAC_Market_Place/assets/122145341/3e497828-af81-4caa-aaf9-2efaf8d14443)
 
 
 
@@ -309,7 +253,8 @@
 - *shadcn/ui - Accordion 컴포넌트 및 Next.js - Dynamic Routes 활용*
 - 하단 메뉴 이동 탭 내 useSelectedLayout 로 App Route Group 값 기반의 현재 위치한 메뉴 아이콘 표기
 
-![Marketplace-feature3online-video-cutter com-ezgif com-video-to-gif-converter](https://private-user-images.githubusercontent.com/122145341/317352942-e81d0b81-7a91-48dd-a6bc-c854e00080a1.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTg4MDkwODcsIm5iZiI6MTcxODgwODc4NywicGF0aCI6Ii8xMjIxNDUzNDEvMzE3MzUyOTQyLWU4MWQwYjgxLTdhOTEtNDhkZC1hNmJjLWM4NTRlMDAwODBhMS5naWY_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNjE5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDYxOVQxNDUzMDdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0zM2U2NDBhY2Q5ZWZiZDA0NzhkMWRlYmZjMWU3NTA1NWNkYzQzNTQ5MjE1NmYxNWVjYjI5NzQzNDNhMzFhZWRiJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.1IX6NsVTXbXqPMbNItAwCeA3WtT_68lj8M91cJI4VO4)
+![카테고리탭상품분류](https://github.com/BoubleJ/ASAC_Market_Place/assets/122145341/1a0dde54-5a46-458d-8137-70dc4ac4998d)
+
 
 
 
@@ -325,7 +270,9 @@
 - 개인화된 작업 수행의 경우 쿠키 내 인증 토큰을 활용하여, 회원에 한하여 기능 사용 가능하도록 제약
 - *Next.js - App Routing (Layout / Page) 및 HTTP Cookie 활용*
 
-![Marketplace-feature6online-video-cutter com-ezgif com-video-to-gif-converter](https://private-user-images.githubusercontent.com/122145341/317353313-7fc84db6-17bb-4495-9a39-5b9ec9081d20.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTg4MDkwODcsIm5iZiI6MTcxODgwODc4NywicGF0aCI6Ii8xMjIxNDUzNDEvMzE3MzUzMzEzLTdmYzg0ZGI2LTE3YmItNDQ5NS05YTM5LTViOWVjOTA4MWQyMC5naWY_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNjE5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDYxOVQxNDUzMDdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lZDRkNzc2NWE3NDUzMDYxNWMxMWRiZDBhM2ZiYzRlMmMyYTM5M2E1NmYwZDAyYWEzYTdkYjc2ZTQzNDA1YzQxJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.xXpqg-qg7VYzitUxu4fGktTM8rKpfiszmovLpIhb7Eo)
+
+![상품찜하기](https://github.com/BoubleJ/ASAC_Market_Place/assets/122145341/1c9625bf-a3ac-42c5-843e-fc5ce295455a)
+
 
 
 
@@ -341,7 +288,8 @@
 - **브랜드, 가격 등의 필터와 바텀시트**를 통해 상세 검색 및 조회 지원
 - *Next.js - Dynamic Routes 활용*
   
-![상품리스트 필터링 gif](https://private-user-images.githubusercontent.com/122145341/316325638-c0562d84-ca03-4552-857e-01b74f7566f2.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTg4MDkwODcsIm5iZiI6MTcxODgwODc4NywicGF0aCI6Ii8xMjIxNDUzNDEvMzE2MzI1NjM4LWMwNTYyZDg0LWNhMDMtNDU1Mi04NTdlLTAxYjc0Zjc1NjZmMi5naWY_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNjE5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDYxOVQxNDUzMDdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0yNWYyZDg2NDZmNWM0NDE4ZWRjN2I1NzBkZjc3OTllYmFmNDQzMWQyZmVkMTdmNjJhOTAxYmMxMTQxYmM5ZGMxJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.pDSdHqLmEMU-lIHv-qkrb62yvwV1Nz8AUtalvM0Oexw)
+![상품리스트필터조회](https://github.com/BoubleJ/ASAC_Market_Place/assets/122145341/4b8a0c4b-0f39-4da3-805f-70d1f8f92ee5)
+
 
 
 
@@ -354,8 +302,8 @@
 - *Next.js - Dynamic Routes 활용 (**검색어에 따른 URL 변경** → 예시를 통해 확인 가능)*
   
 
-![Marketplace-feature4online-video-cutter com-ezgif com-video-to-gif-converter](https://private-user-images.githubusercontent.com/122145341/317353119-b348b5c9-109c-4aa7-a8ff-d9b0ed24ff8b.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTg4MDkwODcsIm5iZiI6MTcxODgwODc4NywicGF0aCI6Ii8xMjIxNDUzNDEvMzE3MzUzMTE5LWIzNDhiNWM5LTEwOWMtNGFhNy1hOGZmLWQ5YjBlZDI0ZmY4Yi5naWY_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNjE5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDYxOVQxNDUzMDdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0yYjYzMjQ5MTVmMjExZjRlMjlhM2RkMDhkZjM5NjE4NmE1MzdmMTIzYjc1NDI2ZGQ5M2VjOWVhNDE1YTgzMWZkJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.CHFGYvbLYBu9lRjCmzbihtEiW7pm3nbuxKREP-Esons)
 
+![검색택](https://github.com/BoubleJ/ASAC_Market_Place/assets/122145341/7c7d8431-cf89-46be-a937-95055d17985e)
 
 
   
@@ -376,7 +324,8 @@
 - 주문내역 내 특정 주문한 상품에 대해 **이미지 및 글 작성을 통해 리뷰 작성 가능**
 - *AJAX 호출 시 Formdata 활용*
  
-![Marketplace-feature8online-video-cutter com-ezgif com-video-to-gif-converter](https://private-user-images.githubusercontent.com/122145341/317353645-d78eb393-a2d3-41de-9186-3595f9673b3c.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTg4MDkwODcsIm5iZiI6MTcxODgwODc4NywicGF0aCI6Ii8xMjIxNDUzNDEvMzE3MzUzNjQ1LWQ3OGViMzkzLWEyZDMtNDFkZS05MTg2LTM1OTVmOTY3M2IzYy5naWY_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNjE5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDYxOVQxNDUzMDdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0zM2MyN2NlNjVjOGIwODExNDZjODgxZTE2MjczYjhhNzAwMmNlM2NlNjEzOGFhNGI1NWMwOGZiZWU2YmUxNDZlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.UwFauFYWhT7z5uG5Fdf1B0Vv3hgrqhBdZNEhl1q0ozw)
+
+![마이페이지내정보수정](https://github.com/BoubleJ/ASAC_Market_Place/assets/122145341/8d759c79-5af1-4498-9e47-1e1f478f335c)
 
 
  <br>
@@ -390,19 +339,9 @@
 - **결제하기 내 주문서 기입** - 주문상품 및 구매자 정보 확인 및 최종 결제 가능
 - 외부 API **Portone**을 활용한 카카오페이 결제 기능 구현
   
-![결제 프로세스 gif](https://private-user-images.githubusercontent.com/122145341/316325677-5f62b81a-1c18-4806-941f-86ecd8898cf4.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTg4MDkwODcsIm5iZiI6MTcxODgwODc4NywicGF0aCI6Ii8xMjIxNDUzNDEvMzE2MzI1Njc3LTVmNjJiODFhLTFjMTgtNDgwNi05NDFmLTg2ZWNkODg5OGNmNC5naWY_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNjE5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDYxOVQxNDUzMDdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0wMzJhMjJjOGRiNDg0OGJiYWM1YzE0YTkxMTUxMzY4MDQ1NjM4NjFlZDE2MjBkNzNiYjQ1NjM3N2YxMDFjOTYwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.f54ne_SPjCZMT1rt4MfQJHJOIKZEDFcBgubM0cfm8vU)
 
-
-<br>
-<br>
-<br>
+![주소입력및결제](https://github.com/BoubleJ/ASAC_Market_Place/assets/122145341/8be1e364-7801-484f-8f92-bfb6f125dc9f)
 
 
 
-## 트러블 슈팅
-- 아이콘 사용시 react icon을 사용했으나 **번들사이즈 축소**를 위해 **svgr로 마이그레이션**
-  **8.15 MB (react-icons)  334.5KB (svgr)의 번들링 사이즈 개선**을 달성
-- 렌딩 페이지 배너 이미지를 lazy-loading 방식에서 **preload 방식**으로 변경
-   **라이트하우스 성능 메트릭 78점 -> 97점 개선 달성**
-- [트러블 슈팅 과정 기록 노션 링크](https://supreme-gram-307.notion.site/b609d241afe34994b9776ed29b7db2d3)
 
